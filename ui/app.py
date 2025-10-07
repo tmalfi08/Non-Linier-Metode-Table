@@ -23,6 +23,10 @@ def start_app():
             tabel_str = tabulate(df, headers="keys", floatfmt=".5f", numalign="center")
             box_hasil.insert(tk.END, tabel_str)
 
+            if iterasi is not None:
+                box_hasil.insert(tk.END, f"\n\nDitemukan pada iterasi ke-{iterasi}, x ≈ {x_terpilih:.5f}")
+            else:
+
 
 
 
