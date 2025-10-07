@@ -1,7 +1,7 @@
 UTS PRAKTIKUM KOMPUTASI NUMERIK ANGGOTA KELOMPOK 2:
-1. 
+1. Andrea Widi (2408107010083)
 2.
 3.
-4. Cut Wynona Andromeda
+4. Cut Wynona Andromeda (2408107010097)
 5.
 6.
