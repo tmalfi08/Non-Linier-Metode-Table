@@ -58,20 +58,6 @@ def start_app():
     entry_atas = tk.Entry(frame, width=10)
     entry_atas.grid(row=3, column=1, padx=5, pady=5)
 
-    btn_hitung = tk.Button(root, text="Proses Perhitungan", command=jalankan, bg="#4CAF50", fg="white", font=("Arial", 12, "bold"))
-    btn_hitung.pack(pady=8)
-
-    btn_plot = tk.Button(root, text="Tampilkan Grafik", command=tampilkan, bg="#2196F3", fg="white", font=("Arial", 12, "bold"))
-    btn_plot.pack(pady=5)
-
-    frame_hasil = tk.Frame(root, bg="white", relief="solid", borderwidth=1)
-    frame_hasil.pack(padx=15, pady=15, fill="both", expand=True)
-
-    global box_hasil
-    box_hasil = tk.Text(frame_hasil, font=("Consolas", 10), bg="#FDFDFD")
-    box_hasil.pack(padx=10, pady=10, fill="both", expand=True)
-
-    root.mainloop()
-
+    
 
 
