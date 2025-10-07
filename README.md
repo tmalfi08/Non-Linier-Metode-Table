@@ -1,0 +1,7 @@
+UTS PRAKTIKUM KOMPUTASI NUMERIK ANGGOTA KELOMPOK 2:
+1. 
+2.
+3.
+4. Cut Wynona Andromeda
+5.
+6.
