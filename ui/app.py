@@ -10,4 +10,14 @@ def start_app():
     root.geometry("650x750")
     root.configure(bg="#ECECEC")
 
+ def jalankan():
+        try:
+            expr = input_fungsi.get()
+            N = int(entry_n.get())
+            bawah = float(entry_bawah.get())
+            atas = float(entry_atas.get())
+
+            df, iterasi, x_terpilih = hitung_metode_tabel(expr, N, bawah, atas)
+
+
 
