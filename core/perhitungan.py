@@ -21,4 +21,12 @@ def hitung_metode_tabel(expr, N, bawah, atas):
         fxi_next = eval_fungsi(expr, xi + h) if i < N else None
         perkalian = fxi * fxi_next if fxi_next is not None else None
 
+        if iterasi_terpilih is None and fxi is not None and fxi_next is not None:
+            if abs(fxi) < abs(fxi_next):
+                iterasi_terpilih, x_terpilih = i, xi
+
+    df = pd.DataFrame(hasil["tabel"],
+                      columns=["xi", "f(xi)", "f(x(i+1))", "f(xi)*f(x(i+1))"])
+    return df, iterasi_terpilih, x_terpilih
+
         hasil["tabel"].append([xi, fxi, fxi_next, perkalian])
