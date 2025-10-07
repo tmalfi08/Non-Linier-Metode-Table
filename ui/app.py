@@ -34,7 +34,7 @@ def start_app():
         if not hasil["tabel"]:
             messagebox.showwarning("Peringatan", "Belum ada data! Silakan hitung dulu.")
         else:
-            tampilkan_grafik(hasil["tabel"]
+            tampilkan_grafik(hasil["tabel"])
 
 
 
