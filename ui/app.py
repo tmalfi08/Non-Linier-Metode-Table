@@ -26,6 +26,15 @@ def start_app():
             if iterasi is not None:
                 box_hasil.insert(tk.END, f"\n\nDitemukan pada iterasi ke-{iterasi}, x ≈ {x_terpilih:.5f}")
             else:
+            box_hasil.insert(tk.END, "\n\nTidak ada iterasi yang memenuhi kondisi.")
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
+
+    def tampilkan():
+        if not hasil["tabel"]:
+            messagebox.showwarning("Peringatan", "Belum ada data! Silakan hitung dulu.")
+        else:
+            tampilkan_grafik(hasil["tabel"])
 
 
 
