@@ -69,7 +69,10 @@ def start_app():
 
     global box_hasil
     box_hasil = tk.Text(frame_hasil, font=("Consolas", 10), bg="#FDFDFD")
-   
+    box_hasil.pack(padx=10, pady=10, fill="both", expand=True)
+
+    root.mainloop()
+
 
    
 
