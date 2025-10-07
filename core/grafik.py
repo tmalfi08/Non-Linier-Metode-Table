@@ -11,4 +11,6 @@ def tampilkan_grafik(hasil):
 plt.xlabel("x")
     plt.ylabel("f(x)")
     plt.title("Grafik Fungsi")
-
+   plt.grid(True)
+    plt.legend()
+    plt.show()
