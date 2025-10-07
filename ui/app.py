@@ -10,7 +10,7 @@ def start_app():
     root.geometry("650x750")
     root.configure(bg="#ECECEC")
 
- def jalankan():
+     def jalankan():
         try:
             expr = input_fungsi.get()
             N = int(entry_n.get())
@@ -18,6 +18,11 @@ def start_app():
             atas = float(entry_atas.get())
 
             df, iterasi, x_terpilih = hitung_metode_tabel(expr, N, bawah, atas)
+
+            box_hasil.delete(1.0, tk.END)
+            tabel_str = tabulate(df, headers="keys", floatfmt=".5f", numalign="center")
+            box_hasil.insert(tk.END, tabel_str)
+
 
 
 
