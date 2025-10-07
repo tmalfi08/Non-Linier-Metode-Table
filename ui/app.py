@@ -64,6 +64,13 @@ def start_app():
     btn_plot = tk.Button(root, text="Tampilkan Grafik", command=tampilkan, bg="#2196F3", fg="white", font=("Arial", 12, "bold"))
     btn_plot.pack(pady=5)
 
+    frame_hasil = tk.Frame(root, bg="white", relief="solid", borderwidth=1)
+    frame_hasil.pack(padx=15, pady=15, fill="both", expand=True)
+
+    global box_hasil
+    box_hasil = tk.Text(frame_hasil, font=("Consolas", 10), bg="#FDFDFD")
+   
+
    
 
     
